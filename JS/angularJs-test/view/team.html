@@ -1,0 +1,28 @@
+<div class="content">
+  <h1>Team</h1>
+  <input type="text" ng-model="search" />
+
+  <h3>Pro.Gramiści</h3>
+  <div>
+    <button ng-click="order = 'name'">Order by Name</button>
+    <button ng-click="order = 'position'">Order by Position</button>
+  </div>
+
+  <div style="margin-top: 10px">
+    <button ng-click="show = true">Show List</button>
+    <button ng-click="show = false">Hide List</button>
+  </div>
+
+  <ul ng-show="show">
+    <li ng-repeat="worker in workers | orderBy: order | filter: search">
+      <a>{{ worker.name }} - {{ worker.position }}</a>
+      <div ng-click="removeWorker(worker)" class="remove">x</div>
+    </li>
+  </ul>
+
+  <form ng-submit="addWorker()">
+    <input type="text" placeholder="name" ng-model="newWorker.name" />
+    <input type="text" placeholder="position" ng-model="newWorker.position" />
+    <input type="submit" value="Add new worker" />
+  </form>
+</div>

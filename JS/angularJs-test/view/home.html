@@ -1,0 +1,51 @@
+<div class="content">
+  <h1>Home</h1>
+  <ul>
+    <li>
+      <button
+        id="gif"
+        ng-click="url='https://media.giphy.com/media/Wmj1xWJfaf8oPS2qTf/giphy.gif'"
+      >
+        gif 1
+      </button>
+    </li>
+    <li>
+      <button
+        id="gif"
+        ng-click="url='https://media.giphy.com/media/Xg4LZegQFWOjMqapFb/giphy.gif'"
+      >
+        gif 2
+      </button>
+    </li>
+    <li>
+      <button
+        id="gif"
+        ng-click="url='https://media.giphy.com/media/fVD4NVCppQpwJZcqDb/giphy.gif'"
+      >
+        gif 3
+      </button>
+    </li>
+    <li>
+      <button id="gif" ng-click="url=''">
+        no gif
+      </button>
+    </li>
+  </ul>
+  <div>
+    <button ng-click="show = true">
+      Show Salvatore
+    </button>
+    <button ng-click="show = false">Hide Salvatore</button>
+    <div>
+      <img
+        ng-src="https://media.giphy.com/media/Ss6CLqREZ9b1YXrpca/giphy.gif"
+        ng-show="show"
+        style="margin-top: 20px; margin-left: auto; margin-right: auto;display: block"
+        class=""
+      />
+    </div>
+    <div ng-show="url" style="margin-top: 20px">
+      <img ng-src="{{ url }}" id="gif" />
+    </div>
+  </div>
+</div>

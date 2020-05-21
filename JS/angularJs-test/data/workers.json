@@ -1,0 +1,26 @@
+[{
+	"name": "Wojtek",
+	"position": "Big Boss"
+}, {
+	"name": "Radek",
+	"position": "Frontend Master"
+}, {
+	"name": "Damian",
+	"position": "Backend Assassin"
+}, {
+	"name": "Grzegorz",
+	"position": "Testing Warrior"
+
+}, {
+	"name": "Darek",
+	"position": "Testing Apprentice"
+}, {
+	"name": "Marcin",
+	"position": "Graphic Mage"
+}, {
+	"name": "Łukasz",
+	"position": "AI Shepard"
+}, {
+	"name": "Adrian",
+	"position": "Frontend Student"
+}]
